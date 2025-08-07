@@ -3,8 +3,9 @@
 ### Pre-print: The capacity for adaptation to climate warming in a naturalized annual plant (_Brassica rapa_)
 ### Authors: Cameron So, Karl Grieshop, Sydney Rotman, Arthur Weis
 
-This project has been conditionally accepted in the journal Evolution. A pre-print was released in [2021](https://www.biorxiv.org/content/10.1101/2022.10.01.510426v1). 
-The data and code for this project are also archived on Borealis. 
+This project has been conditionally accepted in the journal Evolution. 
+A pre-print was released in 2021 on [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.10.01.510426v1). 
+The data and code for this project will also be soon archived on [Borealis](https://borealisdata.ca/). 
 
 ### Abstract
 
@@ -20,3 +21,5 @@ Steps to  come...
  
 * **Frank Shaw** - *R Code* - [Email](mailto:fshaw314@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)
 * **Charlie Geyer** - *R Code* - [Email](mailto:geyer@umn.edu?subject=[GitHub]%20Source%20Han%20Sans)
+* **Pierre de Villemereuil** - *MCMCglmm assistance* - [Email](mailto:pierre.de-villemereuil@mnhn.fr?subject=[GitHub]%20Source%20Han%20Sans)
+* **Matthew Wolak** - *nadiv assistance* - [Email](mailto:terps@auburn.edu?subject=[GitHub]%20Source%20Han%20Sans)
