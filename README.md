@@ -15,7 +15,22 @@ It includes quantitative genetic models to estimate additive genetic variance fo
 
 ### How to use this code
 
-Steps to  come...
+R is the main statistical software.
+
+Main scripts:
+- 01_Data_exploration.R - Data processing and exploratory graphs
+- 02_MCMC_data_prep.R - Full data processing step, with overlaps from 01_Data_exploration.R
+- 03_MCMC_ambient.R - Estimates quantitative genetic parameters (Va, Vd, Vm, h2) and trait means for plants in the ambient treatment
+- 04_MCMC_heated.R - Estimates quantitative genetic parameters (Va, Vd, Vm, h2) and trait meansfor plants in the heated treatment
+- 05_MCMC_genetic_correlations.R - Estimates additive genetic variance for plasticity and additive genetic correlations
+- 06_MCMC_Climate_analysis.R - Extracts and plots climatic data
+
+Supplementary scripts:
+- S1_Frequentist_trait_mean_analysis.R - Estimates trait means and treatment effects under Frequentist framework
+- S2_Flowering_time_analysis.R - Estimates flowering times and treatment effects
+- S3_MCMC_full_models.R - Attempts to estimate quantitative genetic parameters in full model, including ambient and heated data
+- S4_lme4_Vg_broad.R - Estimates broad sense genetic variance under Frequentist framework
+- S5_MCMC_Vg_broad.R - Estimates broad sense genetic variance under Bayesisan framework
 
 ### Acknowledgements
  

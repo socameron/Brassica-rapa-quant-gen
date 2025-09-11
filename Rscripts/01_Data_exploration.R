@@ -1,5 +1,6 @@
-#### PROJECT: Brassica rapa Va/W Study (Data collected 2019 at Koffler Scientific Reserve, King City, ON)
+#### PROJECT: Brassica rapa Va/W Study (Data collected by Cameron So 2019 at Koffler Scientific Reserve, King City, ON)
 #### PURPOSE: Clean data and observe distributions prior to MCMCglmm analysis
+#### AUTHOR: Cameron So
 
 #'####################################################################'#
 ##############      PACKAGE INSTALLATION AND IMPORT      ###############
@@ -11,6 +12,7 @@ library(tidyverse)
 library(zoo)
 library(car)
 library(multcompView)
+#library(lsmeans) #lsmeans now integrated into emmeans
 library(emmeans)
 library(FSA)
 
@@ -953,7 +955,7 @@ fam_lifetime_fig <- fam_lifetime %>%
   scale_color_manual("", values=c("dodgerblue2", "tomato2"), labels=c("Ambient", "Heated")) +
   scale_fill_manual("", values=c("dodgerblue2", "tomato2"), labels=c("Ambient", "Heated")) +
   scale_x_continuous(limits=c(0,40)) +
-  labs(x="Lifetime fitness (*W*)", y="", tag = ("C)"), color = "", fill = "") +
+  labs(x="Lifetime fitness", y="", tag = ("C)"), color = "", fill = "") +
   theme_bw() + 
   theme(panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         axis.line = element_line(colour = "black", size = 1), axis.ticks = element_line(size = 1), 
@@ -964,7 +966,7 @@ fam_lifetime_fig <- fam_lifetime %>%
   #guides(color = guide_legend(nrow = 1)) + #to put it on one horizontal row.. but it doesn't fit in saved picture
   theme(axis.title.x = ggtext::element_markdown())
 fam_lifetime_fig
-ggsave(plot = fam_lifetime_fig, filename = "Routput/Figures/fig_4c.png", width = 8, height = 8, units ="cm")
+ggsave(plot = fam_lifetime_fig, filename = "Routput/Figures/fig_3c.tif", width = 8, height = 8, units ="cm")
 
 mu_flwr <- dat %>% #Survival (to flowering)
   group_by(treatment) %>%
@@ -987,7 +989,7 @@ fam_flwr_fig <- fam_flwr %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.position = "none", legend.text = element_text(size=10), legend.title = element_text(size=10))
-ggsave(plot = fam_flwr_fig, filename = "Routput/Figures/fig_4a.png", width = 8, height = 8, units ="cm")
+ggsave(plot = fam_flwr_fig, filename = "Routput/Figures/fig_3a.tif", width = 8, height = 8, units ="cm")
 
 
 mu_pods <- dat %>% #Fecundity (of flowering plants)
@@ -1012,7 +1014,10 @@ fam_pods_fig <- fam_pods %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.position = "none", legend.text = element_text(size=10), legend.title = element_text(size=10))
-ggsave(plot = fam_pods_fig, filename = "Routput/Figures/fig_4b.png", width = 8, height = 8, units ="cm")
+ggsave(plot = fam_pods_fig, filename = "Routput/Figures/fig_3b.png", width = 8, height = 8, units ="cm")
+
+fig_3 <- fam_flwr_fig + fam_pods_fig
+ggsave(plot = fig_3, filename = "Routput/Figures/fig_3.tif", width = 16, height = 9.5, units = "cm")
 
 #Graphs 11 - Reaction Norms of Family Means ####
 

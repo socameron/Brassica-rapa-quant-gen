@@ -1,5 +1,6 @@
-#### PROJECT: Brassica rapa Va/W Study (Data collected at Koffler Scientific Reserve, King City, ON)
+#### PROJECT: Brassica rapa Va/W Study (Data collected by Cameron So 2019 at Koffler Scientific Reserve, King City, ON)
 #### PURPOSE: Construct within heated environment models using MCMCglmm to extract Va, Vd, and Vm
+#### AUTHOR: Cameron So
 
 #'####################################################################'#
 ##############      PACKAGE INSTALLATION AND IMPORT      ###############
@@ -525,10 +526,11 @@ var_H3.0_fig <- posteriors_H3.0 %>%
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
         legend.position  = "none") +
-  theme(axis.title.x = ggtext::element_markdown())
+  theme(axis.title.x = ggtext::element_markdown()) +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H3.0_fig
 
-ggsave(plot = var_H3.0_fig, filename = "Routput/Figures/fig_3_H3.0_var.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H3.0_fig, filename = "Routput/Figures/fig_4_H3.0_var.tif", width = 8, height = 8, units="cm")
 
 var_H3.0_fig2 <- posteriors_H3.0 %>%
   filter(Component %in% c("h2", "Rw")) %>%
@@ -546,10 +548,11 @@ var_H3.0_fig2 <- posteriors_H3.0 %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
-        legend.position  = "none")
+        legend.position  = "none") +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H3.0_fig2
 
-ggsave(plot = var_H3.0_fig2, filename = "Routput/Figures/fig_3_H3.0_h2.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H3.0_fig2, filename = "Routput/Figures/fig_4_H3.0_h2.tif", width = 8, height = 8, units="cm")
 
 
 #Plotting density plot of breeding values
@@ -809,10 +812,11 @@ var_H4.1_fig <- posteriors_H4.1 %>%
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
         legend.position  = "none") +
-  theme(axis.title.x = ggtext::element_markdown())
+  theme(axis.title.x = ggtext::element_markdown()) +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H4.1_fig
 
-ggsave(plot = var_H4.1_fig, filename = "Routput/Figures/fig_3_H4.1_var.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H4.1_fig, filename = "Routput/Figures/fig_4_H4.1_var.tif", width = 8, height = 8, units="cm")
 
 var_H4.1_fig2 <- posteriors_H4.1 %>%
   filter(Component %in% c("h2", "Rw")) %>%
@@ -830,10 +834,11 @@ var_H4.1_fig2 <- posteriors_H4.1 %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
-        legend.position  = "none")
+        legend.position  = "none") +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H4.1_fig2
 
-ggsave(plot = var_H4.1_fig2, filename = "Routput/Figures/fig_3_H4.1_h2.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H4.1_fig2, filename = "Routput/Figures/fig_4_H4.1_h2.tif", width = 8, height = 8, units="cm")
 
 #Plotting density plot of breeding values
 HW_4.1_breed <- HW_model4.1$Sol[,7:7657]
@@ -1393,10 +1398,11 @@ var_H8.1_fig <- posteriors_H8.1 %>%
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
         legend.position  = "none") +
-  theme(axis.title.x = ggtext::element_markdown())
+  theme(axis.title.x = ggtext::element_markdown()) +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H8.1_fig
 
-ggsave(plot = var_H8.1_fig, filename = "Routput/Figures/fig_3_H8.1_var.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H8.1_fig, filename = "Routput/Figures/fig_4_H8.1_var.tif", width = 8, height = 8, units="cm")
 
 var_H8.1_fig2 <- posteriors_H8.1 %>%
   filter(Component %in% c("h2", "Rw")) %>%
@@ -1414,10 +1420,11 @@ var_H8.1_fig2 <- posteriors_H8.1 %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
-        legend.position  = "none")
+        legend.position  = "none") +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H8.1_fig2
 
-ggsave(plot = var_H8.1_fig2, filename = "Routput/Figures/fig_3_H8.1_h2.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H8.1_fig2, filename = "Routput/Figures/fig_4_H8.1_h2.tif", width = 8, height = 8, units="cm")
 
 
 
@@ -1646,10 +1653,11 @@ var_H9.1_fig <- posteriors_H9.1 %>%
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
         legend.position  = "none") +
-  theme(axis.title.x = ggtext::element_markdown())
+  theme(axis.title.x = ggtext::element_markdown()) +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H9.1_fig
 
-ggsave(plot = var_H9.1_fig, filename = "Routput/Figures/fig_3_H9.1_var.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H9.1_fig, filename = "Routput/Figures/fig_4_H9.1_var.tif", width = 8, height = 8, units="cm")
 
 var_H9.1_fig2 <- posteriors_H9.1 %>%
   filter(Component %in% c("h2", "Rw")) %>%
@@ -1667,10 +1675,11 @@ var_H9.1_fig2 <- posteriors_H9.1 %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
-        legend.position  = "none")
+        legend.position  = "none") +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H9.1_fig2
 
-ggsave(plot = var_H9.1_fig2, filename = "Routput/Figures/fig_3_H9.1_h2.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H9.1_fig2, filename = "Routput/Figures/fig_4_H9.1_h2.tif", width = 8, height = 8, units="cm")
 
 
 #Model 9.2 with a Fisher Parameter Expanded Prior (nu = 0.002 for prior sensitivity analysis)
@@ -1899,10 +1908,11 @@ var_H10.1_fig <- posteriors_H10.1 %>%
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
         legend.position  = "none") +
-  theme(axis.title.x = ggtext::element_markdown())
+  theme(axis.title.x = ggtext::element_markdown()) +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H10.1_fig
 
-ggsave(plot = var_H10.1_fig, filename = "Routput/Figures/fig_3_H10.1_var.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H10.1_fig, filename = "Routput/Figures/fig_4_H10.1_var.tif", width = 8, height = 8, units="cm")
 
 var_H10.1_fig2 <- posteriors_H10.1 %>%
   filter(Component %in% c("h2", "Rw")) %>%
@@ -1920,10 +1930,11 @@ var_H10.1_fig2 <- posteriors_H10.1 %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
-        legend.position  = "none")
+        legend.position  = "none") +
+  theme(axis.ticks.y = element_blank(), axis.title.x = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H10.1_fig2
 
-ggsave(plot = var_H10.1_fig2, filename = "Routput/Figures/fig_3_H10.1_h2.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H10.1_fig2, filename = "Routput/Figures/fig_4_H10.1_h2.tif", width = 8, height = 8, units="cm")
 
 
 #Model 10.2 using a Fisher Parameter Expanded Prior (nu = 0.002 for prior sensitivity analysis)
@@ -2181,10 +2192,11 @@ var_H11.1_fig <- posteriors_H11.1 %>%
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
         legend.position  = "none") +
-  theme(axis.title.x = ggtext::element_markdown())
+  theme(axis.title.x = ggtext::element_markdown()) +
+  theme(axis.ticks.y = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H11.1_fig
 
-ggsave(plot = var_H11.1_fig, filename = "Routput/Figures/fig_3_H11.1_var.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H11.1_fig, filename = "Routput/Figures/fig_4_H11.1_var.tif", width = 8, height = 8, units="cm")
 
 var_H11.1_fig2 <- posteriors_H11.1 %>%
   filter(Component %in% c("h2", "Rw")) %>%
@@ -2202,10 +2214,11 @@ var_H11.1_fig2 <- posteriors_H11.1 %>%
         axis.ticks.length = unit(0.25, "cm"), plot.title = element_text(hjust = 0.5), 
         axis.text = element_text(size=10), axis.title = element_text(size=10),
         legend.text = element_text(size=10), legend.title = element_text(size=10),
-        legend.position  = "none")
+        legend.position  = "none") +
+  theme(axis.ticks.y = element_blank(), axis.title.y = element_blank(), axis.text.y = element_blank()) # remove x-y labels, y-ticks
 var_H11.1_fig2
 
-ggsave(plot = var_H11.1_fig2, filename = "Routput/Figures/fig_3_H11.1_h2.png", width = 8, height = 8, units="cm")
+ggsave(plot = var_H11.1_fig2, filename = "Routput/Figures/fig_4_H11.1_h2.tif", width = 8, height = 8, units="cm")
 
 
 #Model 11.2 with Fisher Parameter Expanded Prior (nu = 0.002 for prior sensitivity analysis + longer nitt)
