@@ -34,7 +34,7 @@ Supplementary scripts:
 
 ### Acknowledgements
  
-* **Frank Shaw** - *R Code* - [Email](mailto:fshaw314@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)
-* **Charlie Geyer** - *R Code* - [Email](mailto:geyer@umn.edu?subject=[GitHub]%20Source%20Han%20Sans)
+* **Frank Shaw** - *aster R Code (not used in main manuscript)* - [Email](mailto:fshaw314@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)
+* **Charlie Geyer** - *asterR Code (not used in main manuscript)* - [Email](mailto:geyer@umn.edu?subject=[GitHub]%20Source%20Han%20Sans)
 * **Pierre de Villemereuil** - *MCMCglmm assistance* - [Email](mailto:pierre.de-villemereuil@mnhn.fr?subject=[GitHub]%20Source%20Han%20Sans)
 * **Matthew Wolak** - *nadiv assistance* - [Email](mailto:terps@auburn.edu?subject=[GitHub]%20Source%20Han%20Sans)
