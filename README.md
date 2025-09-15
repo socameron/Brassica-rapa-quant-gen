@@ -1,11 +1,11 @@
-# Project: Additive genetic variance for fitness in _Brassica rapa_
+# Additive genetic variance for fitness in _Brassica rapa_
 
-### Pre-print: The capacity for adaptation to climate warming in a naturalized annual plant (_Brassica rapa_)
+### Accepted: The capacity for adaptation to climate warming in a naturalized annual plant (_Brassica rapa_)
 ### Authors: Cameron So, Karl Grieshop, Sydney Rotman, Arthur Weis
 
-This project has been conditionally accepted in the journal Evolution. 
+This project has been accepted in the journal Evolution. 
 A pre-print was released in 2021 on [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.10.01.510426v1). 
-The data and code for this project will also be soon archived on [Borealis](https://borealisdata.ca/). 
+The data and code for this project will also be soon archived on [Dryad](datadryad.org). 
 
 ### Abstract
 
